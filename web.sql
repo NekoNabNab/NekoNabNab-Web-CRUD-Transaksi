@@ -133,21 +133,7 @@ INSERT INTO `pembukuan` (`id`, `create_time`, `type`, `item_id`, `amount`, `pemb
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `subs`
---
-
-CREATE TABLE `subs` (
-  `id` int(255) NOT NULL,
-  `nama` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Indexes for dumped tables
---
-
---
+-- 
 -- Indeks untuk tabel `admin`
 --
 ALTER TABLE `admin`
@@ -169,12 +155,6 @@ ALTER TABLE `items`
 -- Indeks untuk tabel `pembukuan`
 --
 ALTER TABLE `pembukuan`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indeks untuk tabel `subs`
---
-ALTER TABLE `subs`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -203,14 +183,7 @@ ALTER TABLE `items`
 -- AUTO_INCREMENT untuk tabel `pembukuan`
 --
 ALTER TABLE `pembukuan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=56;
-
---
--- AUTO_INCREMENT untuk tabel `subs`
---
-ALTER TABLE `subs`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
-COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
